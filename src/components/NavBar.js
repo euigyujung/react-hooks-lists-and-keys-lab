@@ -1,9 +1,14 @@
 import React from "react";
 
-function NavBar() {
+function NavBar(props) {
   const links = ["home", "about", "projects"];
 
-  return <nav>{/* display an <a> tag for each link here */}</nav>;
+  return <nav>
+    <a href= {props.home}></a>
+    <a href= {props.about}></a>
+    <a href= {props.projects}></a>
+    
+    </nav>;
 }
 
 export default NavBar;
